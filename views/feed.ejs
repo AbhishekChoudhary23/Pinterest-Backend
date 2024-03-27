@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feeds</title>
+    <link rel="stylesheet" href="/stylesheets/feed.css" />
+  </head>
+  <body>
+    <div class="container">
+      <a class="back" href="/profile">back</a>
+      <% posts.forEach(function(elem){%>
+      <div class="box">
+        <img src="/images/uploads/<%= elem.image%>" alt="image" />
+        <div class="caption"><%= elem.imageText%></div>
+        <div style="opacity: 30%" class="caption">
+          @<%= elem.user.username%>
+        </div>
+      </div>
+      <%})%>
+    </div>
+  </body>
+</html>

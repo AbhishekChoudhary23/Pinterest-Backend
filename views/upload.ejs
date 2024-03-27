@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upload Page</title>
+    <link rel="stylesheet" href="/stylesheets/upload.css" />
+  </head>
+  <body>
+    <!-- <div class="container">
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <input type="text" name="fileCaption" placeholder="some text" />
+            <input type="file" name="file" />
+            <button type="submit">Upload</button>
+          </form>
+    </body>
+    </div> -->
+    <div class="container">
+      <form action="/upload" method="post" enctype="multipart/form-data">
+        <p>Upload file</p>
+        <input
+          placeholder="Your Caption..."
+          class="file-input"
+          name="fileCaption"
+          type="text"
+        />
+        <input class="file-input" type="file" name="file" />
+        <br />
+        <button class="submit-btn" type="submit">Upload</button>
+      </form>
+    </div>
+  </body>
+</html>
